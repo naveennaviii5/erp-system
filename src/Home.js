@@ -6,7 +6,7 @@ import {
 } from 'recharts';
 import { useNavigate } from 'react-router-dom';
 
-import product from './Product';
+// import product from './Product';
 
 
 function Home() {
@@ -16,6 +16,10 @@ function Home() {
         // Navigate to the product page
         navigate('/product');
     };
+
+    const orderClick = () => {
+        navigate('/order')
+    }
 
     const data = [
         {
@@ -125,7 +129,7 @@ function Home() {
             {/* Buttons for Product Management and Order Management */}
             <div className="button-container">
                 <Button variant="primary" className="mr-2" onClick={handleProductManagementClick} >Product Management</Button>
-                <Button variant="secondary">Order Management</Button>
+                <Button variant="secondary" className="mr-2" onClick={orderClick}>Order Management</Button>
             </div>
 
             {/* Rest of the Home component */}

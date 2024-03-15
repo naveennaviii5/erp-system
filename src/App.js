@@ -3,7 +3,7 @@ import './App.css'
 import Sidebar from './Sidebar'
 import Home from './Home'
 import Product from './Product'
-// import Order from './Order'
+import Order from './Order'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 function App() {
@@ -20,7 +20,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/product" element={<Product />} />
-          {/* <Route path="/order" element={<Order />} /> */}
+          <Route path="/order" element={<Order />} />
         </Routes>
       </Router>
 
